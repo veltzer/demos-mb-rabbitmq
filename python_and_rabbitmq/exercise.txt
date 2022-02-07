@@ -1,0 +1,9 @@
+
+- Bring up a rabbitmq server and see that you can connect to it.
+	Run a rabbitmq server on your machine using *docker*!!!
+	Find out the port on which it is listening and make sure it is open
+	Demostrate that you can connect to that port using:
+		$ telnet localhost [port]
+		$ netstat -ln | grep [port]
+		$ ss/ip [you find the right flags]
+	See that process that is actually running using "ps -ef"
