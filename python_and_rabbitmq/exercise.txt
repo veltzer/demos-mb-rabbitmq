@@ -7,3 +7,9 @@
 		$ netstat -ln | grep [port]
 		$ ss/ip [you find the right flags]
 	See that process that is actually running using "ps -ef"
+
+- Put messages on the rabbitmq server and get them back using python code.
+	hint:
+	- you may need to install modules for this to work.
+		(remember: pip install --user [modulename])
+	- you may need to define a queue on which to put and get message.
