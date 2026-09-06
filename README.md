@@ -1,1 +1,1 @@
-# demos-rabbitmq
+# demos-mb-rabbitmq
