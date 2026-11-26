@@ -1,6 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 
-import pika, sys
+import sys
+
+import pika
 
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
@@ -12,7 +14,7 @@ body = sys.argv[1]
 channel.basic_publish(
     exchange='',
     routing_key='hello',
-    body=body,
+    body=body.encode(),
 )
 print(f"sent [{body}]")
 channel.close()
